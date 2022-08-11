@@ -1,17 +1,103 @@
 @font-face {
   font-family: "shrikhand";
-  src: url(.../polices/shrikhand-regular.ttf);
+  src: url("/assets/polices/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "roboto";
-  src: url(.../polices/roboto-regular.ttf);
+  src: url("/assets/polices/Roboto-Regular.ttf");
+  src: url("/assets/polices/Roboto-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/*taille du logo*/
+#logo {
+  height: 35px;
+  width: 150px;
+  padding: 15px;
+}
+
+/*placement des elements du header au centre*/
+header {
+  text-align: center;
+}
+
+/*ombre du conteneur du logo*/
+.nav-accueil__logo {
+  box-shadow: 0px 5px 5px #eaeaea;
+}
+
+/*placement des elements du form*/
+.nav-accueil__form {
+  display: flex;
+  justify-content: center;
+  color: #353535;
+  background-color: #eaeaea;
+  padding: 12px;
+}
+.nav-accueil__formparis {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #353535;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+/*section "reservez le menu qui vous convient"*/
+.reservez {
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+.reservez__titre {
+  margin: 0;
+  text-align: center;
+  font-style: bold;
+  font-size: 25px;
+  padding: 30px 50px 0px 50px;
+}
+.reservez__paragraphe {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  text-align: center;
+  color: #353535;
+}
+.reservez__bouton {
+  text-align: center;
+  padding-top: 20px;
+}
+.reservez__bouton--violet {
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+}
+
+.fonctionnement__titre {
+  padding-left: 20px;
+}
+.fonctionnement__li {
+  list-style: none;
+  padding: 30px;
+}
+.fonctionnement__li--chiffre {
+  border: 1px solid #9356DC;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

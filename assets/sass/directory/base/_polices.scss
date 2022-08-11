@@ -10,12 +10,14 @@
 @font-face {
     font-family: 'roboto';
     src: url("/assets/polices/Roboto-Regular.ttf");
+    src: url("/assets/polices/Roboto-Bold.ttf");
     font-weight: normal;
     font-style:normal;
 }
 
 body
 {
-    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    
 }
 

@@ -13,33 +13,33 @@
 <body>
 
     <header>
-        <nav>
-            <img id="logo" src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
-            <div>
+        <nav class="nav-accueil">
+            <div class="nav-accueil__logo"><img id="logo" src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood"></div>
+            <div class="nav-accueil__form">
                 <i class="fa-solid fa-location-dot"></i>
                 <form action="search" method="post" >
-                    <input type="text" name="ville" value="Paris,Belleville">
+                    <input class="nav-accueil__formparis" type="text" name="ville" value="Paris,Belleville">
                 </form>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+        <section class="reservez">
+            <h2 class="reservez__titre">Réservez le menu qui vous convient</h2>
+            <p class="reservez__paragraphe">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <div  class="reservez__bouton"><button class="reservez__bouton--violet">Explorer nos restaurants</button></div>
         </section>
 
-        <section>
-            <h2>Fonctionnement</h2>
-            <ul>
-                <li><span>1</span> <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurants</li>
-                <li><span>2</span> <i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
-                <li><span>3</span> <i class="fa-solid fa-store"></i> Dégustez au restaurants</li>
+        <section class="fonctionnement">
+            <h2 class="fonctionnement__titre">Fonctionnement</h2>
+            <ul class="fonctionnement__ul">
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">1</span> <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurants</li>
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">2</span> <i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">3</span> <i class="fa-solid fa-store"></i> Dégustez au restaurants</li>
             </ul>
         </section>
 
-        <section>
+        <!--<section>
             <h2>Restaurants</h2>
             <div>
                 <a href="#">
@@ -72,7 +72,7 @@
                 </a>
 
             </div>
-        </section>
+        </section>-->
     </main>
     <footer>
         <img src="./assets/images/logo/ohmyfood.png" alt="logo oh my food">
