@@ -1,13 +1,15 @@
+@use "../utils/variable" as v;
+
 @font-face {
     font-family: 'shrikhand';
-    src: url(.../polices/shrikhand-regular.ttf);
+    src: url("/assets/polices/Shrikhand-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'roboto';
-    src: url(.../polices/roboto-regular.ttf);
+    src: url("/assets/polices/Roboto-Regular.ttf");
     font-weight: normal;
     font-style:normal;
 }
