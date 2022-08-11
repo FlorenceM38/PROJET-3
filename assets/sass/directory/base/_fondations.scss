@@ -86,9 +86,22 @@ header {
     &__titre {
         padding-left: 20px;
     }
+
+    &__ul {
+        padding-left: 0px;
+    }
 &__li {
     list-style: none;
-    padding: 30px;
+    font-size: 18px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #eaeaea;
+    
+    
 
     &--chiffre {
         border: 1px solid #9356DC;
@@ -96,6 +109,10 @@ header {
         background-color: #9356DC;
         border-radius: 25px;
         padding: 5px 10px 5px 10px;
+        
+    }
+    & i {
+        color: #8a8888;
         
     }
 }
