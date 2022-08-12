@@ -1,0 +1,14 @@
+@mixin ombre-bouton-survol {
+    box-shadow: 2px 2px 5px 2px $couleur-gris2;
+    transform: scale(1.05);
+}
+
+@mixin bouton-violet {
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+    border: none;
+    box-shadow: 5px 5px 5px #ddd8d8;
+}
