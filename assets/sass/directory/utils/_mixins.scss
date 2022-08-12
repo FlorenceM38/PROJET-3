@@ -12,3 +12,8 @@
     border: none;
     box-shadow: 5px 5px 5px #ddd8d8;
 }
+
+@mixin coeur-violet {
+    color: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+    
+}

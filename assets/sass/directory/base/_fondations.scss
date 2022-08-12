@@ -1,11 +1,10 @@
 body {
     width: 100%;
     margin: 0;
+
 }
 
-a
-
-{
+a {
     text-decoration: none;
     color: black;
 }
@@ -89,6 +88,7 @@ header {
 
         & :hover {
             @include ombre-bouton-survol;
+
         }
 
         &--violet {
@@ -156,8 +156,13 @@ header {
 /*cartes restaurant*/
 
 .restaurant {
+
+    background-color: $couleur-gris3;
+    margin-top: 60px;
+
     &__titre {
         padding-left: 20px;
+        padding-top: 30px;
     }
 
     &__carte {
@@ -169,7 +174,7 @@ header {
         display: flex;
         flex-direction: column;
         margin: 5%;
-        box-shadow: 3px 3px 3px $couleur-gris2;
+        box-shadow: 5px 5px 5px $couleur-gris3;
 
 
         &--tailleimage {
@@ -184,10 +189,56 @@ header {
 
         &--titre {
             margin: 0;
+            font-size: 17px;
         }
 
         &--texte {
             margin: 0;
+            font-family: 'Roboto-Regular';
+            font-size: 16px;
+
+        }
+
+        &--placement {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
         }
     }
+
+}
+
+.coeur {
+    display: flex;
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &__plein {
+        position: relative;
+        /*color: $couleur-tertiaire;*/
+        width: 20px;
+        margin-right: 10px;
+        z-index: 2;
+        opacity: 0;
+        background: -webkit-linear-gradient(bottom, $couleur-secondaire , $couleur-primaire );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+    }
+
+
+    &__vide {
+        width: 0px;
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+
 }

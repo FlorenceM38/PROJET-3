@@ -14,10 +14,11 @@
 
     <header>
         <nav class="nav-accueil">
-            <div class="nav-accueil__logo"><img id="logo" src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood"></div>
+            <div class="nav-accueil__logo"><img id="logo" src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
+            </div>
             <div class="nav-accueil__form">
                 <i class="fa-solid fa-location-dot"></i>
-                <form action="search" method="post" >
+                <form action="search" method="post">
                     <input class="nav-accueil__formparis" type="text" name="ville" value="Paris,Belleville">
                 </form>
             </div>
@@ -27,15 +28,19 @@
         <section class="reservez">
             <h2 class="reservez__titre">Réservez le menu qui vous convient</h2>
             <p class="reservez__paragraphe">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <div  class="reservez__bouton"><button class="reservez__bouton--violet">Explorer nos restaurants</button></div>
+            <div class="reservez__bouton"><button class="reservez__bouton--violet">Explorer nos restaurants</button>
+            </div>
         </section>
 
         <section class="fonctionnement">
             <h2 class="fonctionnement__titre">Fonctionnement</h2>
             <ul class="fonctionnement__ul">
-                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">1</span> <i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurants</li>
-                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">2</span> <i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
-                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">3</span> <i class="fa-solid fa-store"></i> Dégustez au restaurants</li>
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">1</span> <i
+                        class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurants</li>
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">2</span> <i
+                        class="fa-solid fa-list-ul"></i> Composez votre menu</li>
+                <li class="fonctionnement__li"><span class="fonctionnement__li--chiffre">3</span> <i
+                        class="fa-solid fa-store"></i> Dégustez au restaurants</li>
             </ul>
         </section>
 
@@ -43,10 +48,19 @@
             <h2 class="restaurant__titre">Restaurants</h2>
             <div>
                 <a class="restaurant__carte" href="#">
-                    <img class="restaurant__carte--tailleimage" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image restaurant">
-                    <h3 class="restaurant__carte--titre">La palette du goût</h3>
-                    <p class="restaurant__carte--texte">Ménilmontant</p>
-                    <div><i class="fa-solid fa-heart"></i></div>
+                    <img class="restaurant__carte--tailleimage"
+                        src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="image restaurant">
+                    <div class="restaurant__carte--placement">
+                        <div>
+                            <h3 class="restaurant__carte--titre">La palette du goût</h3>
+                            <p class="restaurant__carte--texte">Ménilmontant</p>
+                        </div>
+                        <div class="coeur">
+                            <div class="coeur__vide"><i class="fa-regular fa-heart"></i></div>
+                            <div class="coeur__plein"><i class="fa-solid fa-heart"></i></div>
+                        </div>
+                    </div>
                 </a>
 
                 <!--<a href="#">
