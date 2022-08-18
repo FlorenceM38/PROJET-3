@@ -147,12 +147,12 @@ header {
 .restaurant {
   background-color: #eaeaea;
   padding-bottom: 40px;
+  padding-top: 30px;
   margin-top: 60px;
   margin-bottom: 0px;
 }
 .restaurant__titre {
   padding-left: 20px;
-  padding-top: 100px;
 }
 .restaurant__carte {
   width: 90%;
