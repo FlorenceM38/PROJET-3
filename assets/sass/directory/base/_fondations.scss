@@ -223,7 +223,29 @@ header {
         &:hover {
             transform: scale(1.01);
         }
+
+        &--nouveau {
+            color: $couleur-vert-fonce;
+            position: absolute;
+            background-color: $couleur-vert-clair;
+            width: 22%;
+            height: 14%;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            border-radius: 2px;
+            font-size: 15px;
+            
+            & p {
+                margin: 5px;
+                
+            }
+            
+        }
     }
+
 
 }
 
