@@ -89,6 +89,7 @@ header {
 
         & :hover {
             @include ombre-bouton-survol;
+            background: linear-gradient(to bottom right, $couleur-secondaire-claire, $couleur-primaire-claire);
 
         }
 

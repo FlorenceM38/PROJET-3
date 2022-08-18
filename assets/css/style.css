@@ -91,6 +91,7 @@ header {
 .reservez__bouton :hover {
   box-shadow: 2px 2px 5px 2px #8a8888;
   transform: scale(1.05);
+  background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 .reservez__bouton--violet {
   font-size: 15px;
