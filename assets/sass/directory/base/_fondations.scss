@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: 0;
-    
+
 
 }
 
@@ -177,6 +177,8 @@ header {
         flex-direction: column;
         margin: 5%;
         box-shadow: 5px 5px 5px $couleur-gris3;
+        transform: scale(1);
+        transition-duration: 400ms;
 
 
         &--tailleimage {
@@ -207,40 +209,53 @@ header {
             align-items: center;
             padding: 10px;
         }
+
+        &:hover {
+            transform: scale(1.01);
+        }
     }
 
 }
 
 .coeur {
     display: flex;
-
+    transform: scale(1);
+    transition-duration: 1000ms;
     &:hover {
-        &::after {
-            opacity: 1;
-        }
+        transform: scale(1.35);
     }
+
 
     &__plein {
         position: relative;
-        /*color: $couleur-tertiaire;*/
         width: 20px;
         margin-right: 10px;
-        z-index: 2;
-        opacity: 0;
         background: -webkit-linear-gradient(bottom, $couleur-secondaire , $couleur-primaire );
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        opacity: 0;
+        transition: opacity 250ms;
+        z-index: 2;
+        
+        &:hover
+        {
+            opacity: 1;
+        }
 
     }
-
 
     &__vide {
         width: 0px;
         z-index: 1;
         opacity: 1;
+        transition: opacity 250ms;
+        &:hover {
+            opacity: 0;
+        }
     }
 
+   
 
 
 }
@@ -277,7 +292,7 @@ header {
             font-family: 'roboto';
             font-size: 20px;
             font-family: 'roboto-medium';
-            
+
         }
     }
 

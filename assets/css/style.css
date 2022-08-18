@@ -162,6 +162,8 @@ header {
   flex-direction: column;
   margin: 5%;
   box-shadow: 5px 5px 5px #eaeaea;
+  transform: scale(1);
+  transition-duration: 400ms;
 }
 .restaurant__carte--tailleimage {
   width: 100%;
@@ -187,29 +189,41 @@ header {
   align-items: center;
   padding: 10px;
 }
+.restaurant__carte:hover {
+  transform: scale(1.01);
+}
 
 .coeur {
   display: flex;
+  transform: scale(1);
+  transition-duration: 1000ms;
 }
-.coeur:hover::after {
-  opacity: 1;
+.coeur:hover {
+  transform: scale(1.35);
 }
 .coeur__plein {
   position: relative;
-  /*color: $couleur-tertiaire;*/
   width: 20px;
   margin-right: 10px;
-  z-index: 2;
-  opacity: 0;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  opacity: 0;
+  transition: opacity 250ms;
+  z-index: 2;
+}
+.coeur__plein:hover {
+  opacity: 1;
 }
 .coeur__vide {
   width: 0px;
   z-index: 1;
   opacity: 1;
+  transition: opacity 250ms;
+}
+.coeur__vide:hover {
+  opacity: 0;
 }
 
 /*footer*/
