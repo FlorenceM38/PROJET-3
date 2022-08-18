@@ -1,14 +1,14 @@
 
-@import "./directory/base/polices";
+@use "./directory/base/polices";
 
-@import "./directory/utils/variable";
+//@import "./directory/utils/variable";
 
-@import "./directory/utils/fonctions";
+//@import "./directory/utils/fonctions";
 
-@import "./directory/utils/mixins";
+//@import "./directory/utils/mixins";
 
 /*@use "./directory/base/fondations";*/
 
-@import "./directory/base/fondations";
+@use "./directory/base/fondations";
 
 

@@ -1,3 +1,5 @@
+@use "../utils/variable" as *;
+@use "../utils/mixins" as *;
 body {
     width: 100%;
     margin: 0;
@@ -106,13 +108,16 @@ header {
         padding-left: 20px;
     }
 
+    & a:hover{
+        background-color: lighten($color: $couleur-primaire, $amount: 36);
+        color: $couleur-primaire;
+
+    }
+
     &__ul {
         padding-left: 0px;
 
-        & :hover {
-            background-color: lighten($color: $couleur-primaire, $amount: 36);
-
-        }
+       
 
         & :hover i {
             color: $couleur-primaire;
@@ -131,6 +136,8 @@ header {
         box-shadow: 5px 5px 5px $couleur-gris3;
         padding-left: 0;
         position: relative;
+        
+        
 
 
 
@@ -231,6 +238,7 @@ header {
     &__plein {
         position: relative;
         width: 20px;
+        font-size: 20px;
         margin-right: 10px;
         background: -webkit-linear-gradient(bottom, $couleur-secondaire , $couleur-primaire );
         background-clip: text;
@@ -249,6 +257,7 @@ header {
 
     &__vide {
         width: 0px;
+        font-size: 20px;
         z-index: 1;
         opacity: 1;
         transition: opacity 250ms;

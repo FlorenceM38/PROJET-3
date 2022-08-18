@@ -1,13 +1,13 @@
 @font-face {
   font-family: "shrikhand";
-  src: url("/assets/polices/Shrikhand-Regular.ttf");
+  src: url("../polices/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "roboto";
-  src: url("/assets/polices/Roboto-Regular.ttf");
-  src: url("/assets/polices/Roboto-Bold.ttf");
+  src: url("../polices/Roboto-Regular.ttf");
+  src: url("../polices/Roboto-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,6 @@ body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-/*@use "./directory/base/fondations";*/
 body {
   width: 100%;
   margin: 0;
@@ -106,11 +105,12 @@ header {
 .fonctionnement__titre {
   padding-left: 20px;
 }
+.fonctionnement a:hover {
+  background-color: #f4eefc;
+  color: #9356DC;
+}
 .fonctionnement__ul {
   padding-left: 0px;
-}
-.fonctionnement__ul :hover {
-  background-color: #f4eefc;
 }
 .fonctionnement__ul :hover i {
   color: #9356DC;
@@ -206,6 +206,7 @@ header {
 .coeur__plein {
   position: relative;
   width: 20px;
+  font-size: 20px;
   margin-right: 10px;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
   background-clip: text;
@@ -220,6 +221,7 @@ header {
 }
 .coeur__vide {
   width: 0px;
+  font-size: 20px;
   z-index: 1;
   opacity: 1;
   transition: opacity 250ms;
@@ -256,5 +258,7 @@ header {
   font-size: 20px;
   font-family: "roboto-medium";
 }
+
+/*@use "./directory/base/fondations";*/
 
 /*# sourceMappingURL=style.css.map */
