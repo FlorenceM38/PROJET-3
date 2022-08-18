@@ -236,6 +236,9 @@ header {
 .coeur__plein:hover {
   opacity: 1;
 }
+.coeur__plein:active {
+  opacity: 1;
+}
 .coeur__vide {
   width: 0px;
   font-size: 20px;
@@ -281,7 +284,8 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #eaeaea;
+  background-color: black;
+  opacity: 0.9;
   z-index: 99;
   animation: loader 5000ms;
   animation-fill-mode: forwards;
@@ -289,7 +293,7 @@ header {
 
 @keyframes loader {
   0% {
-    opacity: 1;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -297,11 +301,14 @@ header {
   }
 }
 .fourchette {
-  color: #9356DC;
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   position: relative;
   margin-top: 200PX;
   animation: fourchette 5000ms;
@@ -323,6 +330,18 @@ header {
     scale: 1.75;
   }
 }
+#loader p {
+  font-family: "shrikhand";
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
 /*@use "./directory/base/fondations";*/
 
 /*# sourceMappingURL=style.css.map */
