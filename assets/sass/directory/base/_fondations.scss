@@ -344,6 +344,7 @@ header {
     z-index: 99;
     animation: loader 5000ms;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes loader {
@@ -353,7 +354,7 @@ header {
 
     100% {
         opacity: 0;
-
+        z-index: -1;
     }
 }
 
