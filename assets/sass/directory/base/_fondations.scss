@@ -1,5 +1,6 @@
 @use "../utils/variable" as *;
 @use "../utils/mixins" as *;
+
 body {
     width: 100%;
     margin: 0;
@@ -87,7 +88,7 @@ header {
         padding: 20px 50px 0px 50px;
         transform: scale(1);
         transition-property: transform;
-        transition-duration: 1000ms;
+
 
         & :hover {
             @include ombre-bouton-survol;
@@ -108,7 +109,7 @@ header {
         padding-left: 20px;
     }
 
-    & a:hover{
+    & a:hover {
         background-color: lighten($color: $couleur-primaire, $amount: 36);
         color: $couleur-primaire;
 
@@ -117,7 +118,7 @@ header {
     &__ul {
         padding-left: 0px;
 
-       
+
 
         & :hover i {
             color: $couleur-primaire;
@@ -136,8 +137,8 @@ header {
         box-shadow: 5px 5px 5px $couleur-gris3;
         padding-left: 0;
         position: relative;
-        
-        
+
+
 
 
 
@@ -174,7 +175,7 @@ header {
 
     &__titre {
         padding-left: 20px;
-        
+
     }
 
     &__carte {
@@ -237,12 +238,12 @@ header {
             justify-content: center;
             border-radius: 2px;
             font-size: 15px;
-            
+
             & p {
                 margin: 5px;
-                
+
             }
-            
+
         }
     }
 
@@ -253,6 +254,7 @@ header {
     display: flex;
     transform: scale(1);
     transition-duration: 1000ms;
+
     &:hover {
         transform: scale(1.35);
     }
@@ -270,9 +272,8 @@ header {
         opacity: 0;
         transition: opacity 250ms;
         z-index: 2;
-        
-        &:hover
-        {
+
+        &:hover {
             opacity: 1;
         }
 
@@ -284,12 +285,13 @@ header {
         z-index: 1;
         opacity: 1;
         transition: opacity 250ms;
+
         &:hover {
             opacity: 0;
         }
     }
 
-   
+
 
 
 }
@@ -330,4 +332,62 @@ header {
         }
     }
 
+}
+
+/*loading spinner*/
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $couleur-gris3;
+    z-index: 99;
+    animation: loader 5000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+.fourchette {
+    color: $couleur-primaire;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    margin-top: 200PX;
+    animation: fourchette 5000ms;
+    scale: 1;
+}
+
+@keyframes fourchette {
+    25% {
+        transform: rotate(360deg);
+        scale: 2;
+
+    }
+
+    50% {
+
+        scale: 2.5;
+    }
+
+    75% {
+        scale: 2;
+
+    }
+
+    100% {
+        scale: 1.75;
+
+    }
 }

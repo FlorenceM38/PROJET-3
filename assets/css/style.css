@@ -85,11 +85,11 @@ header {
   padding: 20px 50px 0px 50px;
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 1000ms;
 }
 .reservez__bouton :hover {
   box-shadow: 2px 2px 5px 2px #8a8888;
   transform: scale(1.05);
+  transition-duration: 600ms;
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 .reservez__bouton--violet {
@@ -276,6 +276,52 @@ header {
   font-family: "roboto-medium";
 }
 
+/*loading spinner*/
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  z-index: 99;
+  animation: loader 5000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fourchette {
+  color: #9356DC;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  position: relative;
+  margin-top: 200PX;
+  animation: fourchette 5000ms;
+  scale: 1;
+}
+
+@keyframes fourchette {
+  25% {
+    transform: rotate(360deg);
+    scale: 2;
+  }
+  50% {
+    scale: 2.5;
+  }
+  75% {
+    scale: 2;
+  }
+  100% {
+    scale: 1.75;
+  }
+}
 /*@use "./directory/base/fondations";*/
 
 /*# sourceMappingURL=style.css.map */
