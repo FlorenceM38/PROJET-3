@@ -211,4 +211,33 @@ header {
   opacity: 1;
 }
 
+/*footer*/
+.footer {
+  color: white;
+  background-color: #353535;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer__titre {
+  font-family: "shrikhand";
+  font-size: 20px;
+  padding-left: 35px;
+}
+.footer__ul {
+  list-style: none;
+}
+.footer__li {
+  padding: 5px 0;
+}
+.footer__li i {
+  width: 16px;
+  padding-right: 10px;
+}
+.footer__li a {
+  color: white;
+  font-family: "roboto";
+  font-size: 20px;
+  font-family: "roboto-medium";
+}
+
 /*# sourceMappingURL=style.css.map */

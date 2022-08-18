@@ -1,6 +1,7 @@
 body {
     width: 100%;
     margin: 0;
+    
 
 }
 
@@ -240,5 +241,43 @@ header {
     }
 
 
+
+}
+
+
+/*footer*/
+
+.footer {
+    color: white;
+    background-color: $couleur-gris1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__titre {
+        font-family: 'shrikhand';
+        font-size: 20px;
+        padding-left: 35px;
+    }
+
+    &__ul {
+        list-style: none;
+    }
+
+    &__li {
+        padding: 5px 0;
+
+        & i {
+            width: 16px;
+            padding-right: 10px;
+        }
+
+        & a {
+            color: white;
+            font-family: 'roboto';
+            font-size: 20px;
+            font-family: 'roboto-medium';
+            
+        }
+    }
 
 }
