@@ -160,11 +160,13 @@ header {
 .restaurant {
 
     background-color: $couleur-gris3;
+    padding-bottom: 40px;
     margin-top: 60px;
+    margin-bottom: 0px;
 
     &__titre {
         padding-left: 20px;
-        padding-top: 30px;
+        padding-top: 100px;
     }
 
     &__carte {
