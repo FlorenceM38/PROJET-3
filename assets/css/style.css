@@ -393,6 +393,7 @@ header {
   padding: 15px 0 15px 0;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 .menu-carte__titre {
   font-size: 17px;
@@ -411,6 +412,7 @@ header {
 }
 .menu-carte__description--prix {
   margin-bottom: 0px;
+  padding-top: 30px;
 }
 .menu-carte__description--prix p {
   margin: 0;
@@ -434,7 +436,7 @@ header {
   top: 0;
   right: 0;
   transform: translateX(100px);
-  transition: transform 1000ms;
+  transition: transform 600ms;
   transform-origin: right;
 }
 .div-coche__check i {

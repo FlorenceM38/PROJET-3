@@ -481,7 +481,8 @@ header {
     border-radius: 20px;
     padding: 15px 0 15px 0;
     position: relative;
-overflow: hidden;
+    overflow: hidden;
+    display: flex;
 
 
     &__titre {
@@ -505,6 +506,11 @@ overflow: hidden;
 
         &--prix {
             margin-bottom: 0px;
+            padding-top: 30px;
+    
+
+            
+
             & p {
                 margin: 0;
             }
@@ -535,7 +541,7 @@ overflow: hidden;
         top: 0;
         right: 0;
         transform: translateX(100px);
-        transition: transform 1000ms;
+        transition: transform 600ms;
 
         transform-origin: right;
 
@@ -557,7 +563,7 @@ overflow: hidden;
         & i {
 
             transform: rotate(360deg);
-            
+
         }
     }
 }
