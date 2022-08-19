@@ -399,9 +399,7 @@ header {
 }
 .menu-carte__description {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  /*padding-top: 10px;*/
   padding: 10px 15px 10px 15px;
 }
 .menu-carte__description--paragraphe {
@@ -433,6 +431,27 @@ header {
   transform: scale(1.05);
   transition-duration: 600ms;
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
+}
+
+.div-coche {
+  display: flex;
+}
+.div-coche__check {
+  font-size: 20px;
+  width: 70px;
+  height: 75px;
+  background-color: #99e2d0;
+  color: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.div-coche__check i {
+  border: 4px solid white;
+  background-color: white;
+  border-radius: 25px;
 }
 
 /*@use "./directory/base/fondations";*/
