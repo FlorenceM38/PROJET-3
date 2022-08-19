@@ -391,6 +391,8 @@ header {
   background-color: white;
   border-radius: 20px;
   padding: 15px 0 15px 0;
+  position: relative;
+  overflow: hidden;
 }
 .menu-carte__titre {
   font-size: 17px;
@@ -406,6 +408,47 @@ header {
   font-size: 17px;
   font-family: "roboto-medium";
   margin: 0;
+}
+.menu-carte__description--prix {
+  margin-bottom: 0px;
+}
+.menu-carte__description--prix p {
+  margin: 0;
+}
+
+.div-coche {
+  display: flex;
+}
+.div-coche__check {
+  font-size: 20px;
+  width: 70px;
+  height: 75px;
+  background-color: #99e2d0;
+  color: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100px);
+  transition: transform 1000ms;
+  transform-origin: right;
+}
+.div-coche__check i {
+  border: 4px solid white;
+  background-color: white;
+  border-radius: 25px;
+  transition: transform 1000ms;
+}
+
+.carte:hover .div-coche__check {
+  transform: translate(0px);
+}
+.carte:hover .div-coche__check i {
+  transform: rotate(360deg);
 }
 
 /*bouton commander*/
@@ -431,27 +474,6 @@ header {
   transform: scale(1.05);
   transition-duration: 600ms;
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
-}
-
-.div-coche {
-  display: flex;
-}
-.div-coche__check {
-  font-size: 20px;
-  width: 70px;
-  height: 75px;
-  background-color: #99e2d0;
-  color: #99e2d0;
-  border-radius: 0 20px 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.div-coche__check i {
-  border: 4px solid white;
-  background-color: white;
-  border-radius: 25px;
 }
 
 /*@use "./directory/base/fondations";*/

@@ -480,8 +480,8 @@ header {
     background-color: white;
     border-radius: 20px;
     padding: 15px 0 15px 0;
-    
-
+    position: relative;
+overflow: hidden;
 
 
     &__titre {
@@ -502,8 +502,79 @@ header {
             font-family: 'roboto-medium';
             margin: 0;
         }
+
+        &--prix {
+            margin-bottom: 0px;
+            & p {
+                margin: 0;
+            }
+        }
     }
 }
+
+
+
+
+.div-coche {
+    display: flex;
+
+
+
+    &__check {
+        font-size: 20px;
+        width: 70px;
+        height: 75px;
+        background-color: $couleur-vert-clair;
+        color: $couleur-vert-clair;
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100px);
+        transition: transform 1000ms;
+
+        transform-origin: right;
+
+        & i {
+            border: 4px solid white;
+            background-color: white;
+            border-radius: 25px;
+            transition: transform 1000ms;
+        }
+    }
+}
+
+.carte {
+
+    &:hover .div-coche__check {
+
+        transform: translate(0px);
+
+        & i {
+
+            transform: rotate(360deg);
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*bouton commander*/
@@ -530,31 +601,4 @@ header {
 
 
 
-}
-
-.div-coche {
-    display: flex;
-
-
-    &__check {
-        font-size: 20px;
-        width: 70px;
-        height: 75px;
-        background-color: $couleur-vert-clair;
-        color: $couleur-vert-clair;
-        border-radius: 0 20px 20px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        
-
-
-        & i {
-            border: 4px solid white;
-            background-color: white;
-            border-radius: 25px;
-            
-        }
-    }
 }
