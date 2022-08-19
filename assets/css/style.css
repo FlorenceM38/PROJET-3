@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "shrikhand";
   src: url("../polices/Shrikhand-Regular.ttf");
@@ -45,14 +46,10 @@ header {
   background-color: #eaeaea;
   padding: 14px;
   box-shadow: inset 0px 4px 10px #b3aeae;
-  /*ombre du conteneur du logo*/
 }
 .nav-accueil__form i {
   padding-left: 70px;
   position: relative;
-}
-.nav-accueil__form__logo {
-  box-shadow: 0px 5px 5px #8a8888;
 }
 .nav-accueil__formparis {
   border: none;
@@ -207,9 +204,8 @@ header {
   justify-content: center;
   border-radius: 2px;
   font-size: 15px;
-}
-.restaurant__carte--nouveau p {
   margin: 5px;
+  align-items: center;
 }
 
 .coeur {
@@ -287,7 +283,7 @@ header {
   background-color: black;
   opacity: 0.9;
   z-index: 99;
-  animation: loader 5000ms;
+  animation: loader 3000ms;
   animation-fill-mode: forwards;
 }
 
@@ -311,7 +307,7 @@ header {
   font-size: 70px;
   position: relative;
   margin-top: 200PX;
-  animation: fourchette 5000ms;
+  animation: fourchette 3000ms;
   scale: 1;
 }
 
@@ -340,6 +336,101 @@ header {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+/*page "la note enchantée*/
+.nav-accueil-enchanté {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  font-size: 20px;
+}
+.nav-accueil-enchanté__logo {
+  width: 100%;
+  justify-content: center;
+}
+
+.image-fond {
+  width: 100%;
+  z-index: 1;
+}
+.image-fond__haut {
+  width: 100%;
+  height: 250PX;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.menu {
+  background-color: #eaeaea;
+  border-radius: 25px 25px 0 0;
+  margin-top: -40px;
+  padding: 20px 50px 40px 20px;
+}
+.menu__titre {
+  font-family: "shrikhand";
+  font-size: 20px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__titre--coeur {
+  font-size: 30px;
+}
+.menu__sous-titre {
+  font-size: 20px;
+  font-family: "roboto-medium";
+}
+
+.menu-carte {
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+.menu-carte__titre {
+  font-size: 17px;
+  margin: 0;
+}
+.menu-carte__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.menu-carte__description--paragraphe {
+  font-size: 17px;
+  font-family: "roboto-medium";
+  margin: 0;
+}
+
+/*bouton commander*/
+.bouton-commander {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.bouton-commander__violet {
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border: none;
+  box-shadow: 5px 5px 5px #ddd8d8;
+  text-align: center;
+  transform: scale(1);
+  transition-property: transform;
+}
+.bouton-commander :hover {
+  box-shadow: 2px 2px 5px 2px #8a8888;
+  transform: scale(1.05);
+  transition-duration: 600ms;
+  background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 
 /*@use "./directory/base/fondations";*/
