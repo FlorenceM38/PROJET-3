@@ -367,7 +367,7 @@ header {
   background-color: #eaeaea;
   border-radius: 25px 25px 0 0;
   margin-top: -40px;
-  padding: 20px 50px 40px 20px;
+  padding: 20px 20px 40px 20px;
 }
 .menu__titre {
   font-family: "shrikhand";
@@ -390,17 +390,19 @@ header {
   height: 45px;
   background-color: white;
   border-radius: 20px;
-  padding: 15px;
+  padding: 15px 0 15px 0;
 }
 .menu-carte__titre {
   font-size: 17px;
   margin: 0;
+  padding-left: 15px;
 }
 .menu-carte__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
+  padding: 10px 15px 10px 15px;
 }
 .menu-carte__description--paragraphe {
   font-size: 17px;

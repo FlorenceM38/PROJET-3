@@ -449,7 +449,7 @@ header {
     background-color: $couleur-gris3;
     border-radius: 25px 25px 0 0;
     margin-top: -40px;
-    padding: 20px 50px 40px 20px;
+    padding: 20px 20px 40px 20px;
 
 
     &__titre {
@@ -479,20 +479,23 @@ header {
     height: 45px;
     background-color: white;
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px 0 15px 0;
+
 
 
 
     &__titre {
         font-size: 17px;
         margin: 0;
+        padding-left: 15px;
     }
 
     &__description {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 10px;
+        /*padding-top: 10px;*/
+        padding: 10px 15px 10px 15px;
 
         &--paragraphe {
             font-size: 17px;
