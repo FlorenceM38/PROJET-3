@@ -496,8 +496,8 @@ header {
         height: 100%;
         width: 100%;
         /* transform: scaleX(1);
-        transform-origin: left;
-        transition: transform 600ms;*/
+        transform-origin: left;*/
+        transition: width 600ms ease-out;
 
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -602,6 +602,7 @@ header {
 
         /*transform: scaleX(0.9);*/
         width: 60%;
+
     }
 
 
