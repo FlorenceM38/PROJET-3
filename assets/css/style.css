@@ -452,7 +452,7 @@ header {
   top: 0;
   right: 0;
   transform: translateX(100px);
-  transition: transform 600ms;
+  transition: transform 600ms ease-out;
   transform-origin: right;
 }
 .div-coche__check i {
