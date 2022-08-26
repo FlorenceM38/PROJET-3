@@ -470,6 +470,8 @@ header {
     &__sous-titre {
         font-size: 20px;
         font-family: 'roboto-medium';
+       
+        
 
     }
 }
@@ -484,6 +486,7 @@ header {
     position: relative;
     overflow: hidden;
     display: flex;
+    margin: 15px 0 15px 0;
 
 
 
@@ -586,6 +589,7 @@ header {
 
 .carte {
 
+   
 
     &:hover .div-coche__check {
 
