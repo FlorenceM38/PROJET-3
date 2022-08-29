@@ -470,8 +470,8 @@ header {
     &__sous-titre {
         font-size: 20px;
         font-family: 'roboto-medium';
-       
-        
+
+
 
     }
 }
@@ -589,7 +589,7 @@ header {
 
 .carte {
 
-   
+
 
     &:hover .div-coche__check {
 
@@ -613,15 +613,52 @@ header {
 }
 
 
+@keyframes animation-carte {
+
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
+.menu-carte--1 {
+    opacity: 0;
+    animation: animation-carte 800ms both;
+}
 
+.menu-carte--2 {
+    opacity: 0;
+    animation: animation-carte 800ms both;
+    animation-delay: 300ms;
+}
 
+.menu-carte--3 {
+    opacity: 0;
+    animation: animation-carte 800ms both;
+    animation-delay: 600ms;
+}
 
-
-
-
-
+.menu-carte--4 {
+    opacity: 0;
+    animation: animation-carte 800ms both;
+    animation-delay: 900ms;
+}
 
 
 
@@ -643,8 +680,9 @@ header {
     justify-content: center;
     margin-top: 40px;
 
+
     &__violet {
-        @include bouton-violet;
+        @include bouton-violet($font-size: 20px);
         text-align: center;
         transform: scale(1);
         transition-property: transform;
