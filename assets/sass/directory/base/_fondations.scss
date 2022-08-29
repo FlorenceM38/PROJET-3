@@ -700,7 +700,7 @@ header {
 
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1093px) { 
 
     .menu_pc {
         flex-direction: row;
@@ -712,6 +712,26 @@ header {
 
     .carte {
         width: 100%;
+    }
+
+    .fonctionnement__ul
+
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .restaurant__carte
+    {
+        min-width: 40%;
+        max-width: 40%;
+    }
+
+    .restaurant--pc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
     

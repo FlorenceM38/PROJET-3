@@ -546,7 +546,7 @@ header {
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1093px) {
   .menu_pc {
     flex-direction: row;
     display: flex;
@@ -554,6 +554,20 @@ header {
   }
   .carte {
     width: 100%;
+  }
+  .fonctionnement__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .restaurant__carte {
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .restaurant--pc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 /*@use "./directory/base/fondations";*/
