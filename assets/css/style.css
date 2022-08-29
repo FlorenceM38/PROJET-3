@@ -106,6 +106,10 @@ header {
   background-color: #f4eefc;
   color: #9356DC;
 }
+.fonctionnement li:hover {
+  background-color: #f4eefc;
+  color: #9356DC;
+}
 .fonctionnement__ul {
   padding-left: 0px;
 }
@@ -124,6 +128,9 @@ header {
   box-shadow: 5px 5px 5px #eaeaea;
   padding-left: 0;
   position: relative;
+}
+.fonctionnement__li:hover a {
+  color: #9356DC;
 }
 .fonctionnement__li--chiffre {
   border: 1px solid #9356DC;
@@ -539,6 +546,16 @@ header {
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 
+@media screen and (min-width: 1000px) {
+  .menu_pc {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .carte {
+    width: 100%;
+  }
+}
 /*@use "./directory/base/fondations";*/
 
 /*# sourceMappingURL=style.css.map */
