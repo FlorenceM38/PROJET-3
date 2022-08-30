@@ -263,9 +263,11 @@ header {
     display: flex;
     transform: scale(1);
     transition-duration: 1000ms;
+    
 
     &:hover {
         transform: scale(1.35);
+        
     }
 
 
@@ -282,9 +284,12 @@ header {
         opacity: 0;
         transition: opacity 250ms;
         z-index: 2;
+        
 
         &:hover {
+            
             opacity: 1;
+            
         }
 
         &:active {
@@ -361,6 +366,8 @@ header {
     z-index: 99;
     animation: loader 3000ms;
     animation-fill-mode: forwards;
+    transition: transform 3000ms;
+    animation-delay: 3000ms;
 
 }
 
@@ -369,6 +376,20 @@ header {
         opacity: 0.9;
     }
 
+    25% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+    95% {
+        transform: translateY(-1000px);
+    }
     100% {
         opacity: 0;
         z-index: -1;
@@ -480,8 +501,12 @@ header {
     }
 
     &__sous-titre {
-        font-size: 20px;
-        font-family: 'roboto-medium';
+        font-size: 18px;
+        font-family: 'Roboto-Thin';
+        font-weight: 100;
+        border-bottom: 4px solid #99E2D0;
+        width: 40px;
+        text-transform: uppercase;
 
 
 
@@ -552,7 +577,7 @@ header {
 
     height: 100%;
     padding-top: 25px;
-
+    
 
 
     & p {
@@ -616,8 +641,9 @@ header {
 
     &:hover .menu-carte__details {
 
-        /*transform: scaleX(0.9);*/
+        
         width: 60%;
+        
 
     }
 
@@ -700,13 +726,14 @@ header {
 
 }
 
-@media screen and (min-width: 1093px) { 
+@media screen and (min-width: 1000px) { 
 
     .menu_pc {
         flex-direction: row;
         display: flex;
         justify-content: space-evenly;
         
+    
         
     }
 
@@ -733,5 +760,12 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .colonnes-plats
+    {
+        width: 30%;
+    }
+
+   
 }
     
