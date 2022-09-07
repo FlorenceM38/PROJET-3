@@ -116,7 +116,7 @@ header {
     & li:hover {
         background-color: lighten($color: $couleur-primaire, $amount: 36);
         color: $couleur-primaire;
-        
+
 
     }
 
@@ -129,7 +129,7 @@ header {
             color: $couleur-primaire;
         }
 
-        
+
     }
 
     &__li {
@@ -147,7 +147,7 @@ header {
 
         &:hover a {
             color: $couleur-primaire;
-            
+
         }
 
 
@@ -263,11 +263,11 @@ header {
     display: flex;
     transform: scale(1);
     transition-duration: 1000ms;
-    
+
 
     &:hover {
         transform: scale(1.35);
-        
+
     }
 
 
@@ -284,12 +284,12 @@ header {
         opacity: 0;
         transition: opacity 250ms;
         z-index: 2;
-        
+
 
         &:hover {
-            
+
             opacity: 1;
-            
+
         }
 
         &:active {
@@ -387,9 +387,11 @@ header {
     75% {
         opacity: 0.25;
     }
+
     95% {
         transform: translateY(-1000px);
     }
+
     100% {
         opacity: 0;
         z-index: -1;
@@ -640,22 +642,27 @@ header {
         }
     }
 
-    /*&:hover .menu-carte__details {
-
-        
-        width: 60%;
-        
-
-    }*/
+    
 
     &:hover .menu-carte__description--prix {
 
-        width: 100px;
+        
 
-        /*transform: translateX(-75px);*/
+        animation: animation-prix 600ms both;
     }
 
 
+}
+
+@keyframes animation-prix {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100px;
+    }
+    
 }
 
 
@@ -734,31 +741,28 @@ header {
 
 }
 
-@media screen and (min-width: 1098px) { 
+@media screen and (min-width: 1098px) {
 
     .menu_pc {
         flex-direction: row;
         display: flex;
         justify-content: space-evenly;
-        
-    
-        
+
+
+
     }
 
     .carte {
         width: 100%;
     }
 
-    .fonctionnement__ul
-
-    {
+    .fonctionnement__ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .restaurant__carte
-    {
+    .restaurant__carte {
         min-width: 40%;
         max-width: 40%;
     }
@@ -769,11 +773,9 @@ header {
         flex-wrap: wrap;
     }
 
-    .colonnes-plats
-    {
+    .colonnes-plats {
         width: 30%;
     }
 
-   
+
 }
-    

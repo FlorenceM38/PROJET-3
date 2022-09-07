@@ -490,15 +490,6 @@ header {
   transition: transform 1000ms;
 }
 
-.carte {
-  /*&:hover .menu-carte__details {
-
-
-      width: 60%;
-
-
-  }*/
-}
 .carte:hover .div-coche__check {
   transform: translate(0px);
 }
@@ -506,10 +497,17 @@ header {
   transform: rotate(360deg);
 }
 .carte:hover .menu-carte__description--prix {
-  width: 100px;
-  /*transform: translateX(-75px);*/
+  animation: animation-prix 600ms both;
 }
 
+@keyframes animation-prix {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
 @keyframes animation-carte {
   0% {
     opacity: 0;
