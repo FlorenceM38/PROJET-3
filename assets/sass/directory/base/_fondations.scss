@@ -577,7 +577,8 @@ header {
 
     height: 100%;
     padding-top: 25px;
-    
+    /*transform: translateX(0px);
+    transition: transform 600ms ease-out;*/
 
 
     & p {
@@ -639,12 +640,19 @@ header {
         }
     }
 
-    &:hover .menu-carte__details {
+    /*&:hover .menu-carte__details {
 
         
         width: 60%;
         
 
+    }*/
+
+    &:hover .menu-carte__description--prix {
+
+        width: 100px;
+
+        /*transform: translateX(-75px);*/
     }
 
 
@@ -726,7 +734,7 @@ header {
 
 }
 
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1098px) { 
 
     .menu_pc {
         flex-direction: row;

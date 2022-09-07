@@ -455,6 +455,8 @@ header {
   margin: 10px;
   height: 100%;
   padding-top: 25px;
+  /*transform: translateX(0px);
+  transition: transform 600ms ease-out;*/
 }
 .menu-carte__description--prix p {
   margin: 0;
@@ -488,14 +490,24 @@ header {
   transition: transform 1000ms;
 }
 
+.carte {
+  /*&:hover .menu-carte__details {
+
+
+      width: 60%;
+
+
+  }*/
+}
 .carte:hover .div-coche__check {
   transform: translate(0px);
 }
 .carte:hover .div-coche__check i {
   transform: rotate(360deg);
 }
-.carte:hover .menu-carte__details {
-  width: 60%;
+.carte:hover .menu-carte__description--prix {
+  width: 100px;
+  /*transform: translateX(-75px);*/
 }
 
 @keyframes animation-carte {
@@ -563,7 +575,7 @@ header {
   background: linear-gradient(to bottom right, rgb(250, 144, 220), #9761d8);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1098px) {
   .menu_pc {
     flex-direction: row;
     display: flex;
