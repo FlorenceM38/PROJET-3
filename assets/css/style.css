@@ -38,7 +38,7 @@ header {
   text-align: center;
 }
 
-/*placement des elements du form*/
+/*placement des elements du form + couleurs, ombres*/
 .nav-accueil__form {
   display: flex;
   justify-content: center;
@@ -64,6 +64,8 @@ header {
 .reservez {
   background-color: #f6f6f6;
   padding-bottom: 50px;
+  /*taille et placement du titre et couleur,police paragraphe*/
+  /*taille et placement du bouton "explorer nos restaurants*/
 }
 .reservez__titre {
   margin: 0;
@@ -82,6 +84,8 @@ header {
   padding: 20px 50px 0px 50px;
   transform: scale(1);
   transition-property: transform;
+  /*au survol du bouron ajout mixin ombre + fond plus clair*/
+  /* ajout mixin pour le style du bouton*/
 }
 .reservez__bouton :hover {
   box-shadow: 2px 2px 5px 2px #8a8888;
@@ -99,19 +103,26 @@ header {
   box-shadow: 5px 5px 5px #ddd8d8;
 }
 
+/* section fonctionnement*/
+.fonctionnement {
+  /*& a:hover {
+      background-color: lighten($color: $couleur-primaire, $amount: 36);
+      color: $couleur-primaire;
+
+  } */
+  /* au survol des li changement de la couleur de fond*/
+  /* taille et placement, couleur des li*/
+}
 .fonctionnement__titre {
   padding-left: 20px;
 }
-.fonctionnement a:hover {
-  background-color: #f4eefc;
-  color: #9356DC;
-}
 .fonctionnement li:hover {
   background-color: #f4eefc;
-  color: #9356DC;
+  /*color: $couleur-primaire;*/
 }
 .fonctionnement__ul {
   padding-left: 0px;
+  /*au survol changement couleur icone*/
 }
 .fonctionnement__ul :hover i {
   color: #9356DC;
@@ -128,6 +139,8 @@ header {
   box-shadow: 5px 5px 5px #eaeaea;
   padding-left: 0;
   position: relative;
+  /*taille et placement et couleur du chiffre avec son rond autour*/
+  /* placement et couleur de l'icone*/
 }
 .fonctionnement__li:hover a {
   color: #9356DC;
@@ -147,13 +160,15 @@ header {
   margin-right: 20px;
 }
 
-/*cartes restaurant*/
+/*section restaurant*/
+/*couleur taille marge de la partie restaurant*/
 .restaurant {
   background-color: #eaeaea;
   padding-bottom: 40px;
   padding-top: 30px;
   margin-top: 60px;
   margin-bottom: 0px;
+  /*taille et placement des carte + ombre + indication animation scale au survol*/
 }
 .restaurant__titre {
   padding-left: 20px;
@@ -170,6 +185,9 @@ header {
   box-shadow: 5px 5px 5px #eaeaea;
   transform: scale(1);
   transition-duration: 400ms;
+  /*taille de l'image dans les cartes restaurant*/
+  /*animation grossisement de la carte au survol*/
+  /*taille, placement et couleur pour le cadre nouveau sur les cartes restaurant*/
 }
 .restaurant__carte--tailleimage {
   width: 100%;
@@ -215,10 +233,14 @@ header {
   align-items: center;
 }
 
+/*coeur taille placement + indication animation*/
 .coeur {
   display: flex;
   transform: scale(1);
   transition-duration: 1000ms;
+  /*coeur qui grossit au survol*/
+  /*coeur plein taille position + indication animation + hauteur du z-index + opacité à 0 avant l'animation*/
+  /* opacité à 0 et z-index descendu au survol pour faire disparaitre les contours du coeur vide*/
 }
 .coeur:hover {
   transform: scale(1.35);
@@ -235,11 +257,9 @@ header {
   opacity: 0;
   transition: opacity 250ms;
   z-index: 2;
+  /*au survol opcité à 1 pour faire apparaitre le coeur plein*/
 }
 .coeur__plein:hover {
-  opacity: 1;
-}
-.coeur__plein:active {
   opacity: 1;
 }
 .coeur__vide {
@@ -254,11 +274,13 @@ header {
 }
 
 /*footer*/
+/*taille, couleur, position du footer*/
 .footer {
   color: white;
   background-color: #353535;
   padding-top: 10px;
   padding-bottom: 10px;
+  /*enlever style de la liste*/
 }
 .footer__titre {
   font-family: "shrikhand";
@@ -283,6 +305,7 @@ header {
 }
 
 /*loading spinner*/
+/*couleur de fond + taille + indiaction pour l'animation - intégration de la keyframes*/
 #loader {
   position: fixed;
   width: 100%;
@@ -296,6 +319,7 @@ header {
   animation-delay: 3000ms;
 }
 
+/*keyframes opacité + remonté vers le haut et à la fin z-index -1 pour disparaitre*/
 @keyframes loader {
   0% {
     opacity: 0.9;

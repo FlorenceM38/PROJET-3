@@ -28,7 +28,7 @@ header {
 
 
 
-/*placement des elements du form*/
+/*placement des elements du form + couleurs, ombres*/
 .nav-accueil {
 
 
@@ -66,6 +66,7 @@ header {
     background-color: $couleur-gris4;
     padding-bottom: 50px;
 
+    /*taille et placement du titre et couleur,police paragraphe*/
     &__titre {
         margin: 0;
         text-align: center;
@@ -81,19 +82,22 @@ header {
         color: $couleur-gris2;
     }
 
+    /*taille et placement du bouton "explorer nos restaurants*/
+
     &__bouton {
         text-align: center;
         padding: 20px 50px 0px 50px;
         transform: scale(1);
         transition-property: transform;
 
-
+        /*au survol du bouron ajout mixin ombre + fond plus clair*/
         & :hover {
             @include ombre-bouton-survol;
             background: linear-gradient(to bottom right, $couleur-secondaire-claire, $couleur-primaire-claire);
 
         }
 
+        /* ajout mixin pour le style du bouton*/
         &--violet {
             @include bouton-violet;
 
@@ -102,30 +106,33 @@ header {
     }
 }
 
+/* section fonctionnement*/
 .fonctionnement {
     &__titre {
         padding-left: 20px;
     }
 
-    & a:hover {
+    /*& a:hover {
         background-color: lighten($color: $couleur-primaire, $amount: 36);
         color: $couleur-primaire;
 
-    }
+    } */
 
+
+    /* au survol des li changement de la couleur de fond*/
     & li:hover {
         background-color: lighten($color: $couleur-primaire, $amount: 36);
-        color: $couleur-primaire;
+        /*color: $couleur-primaire;*/
 
 
     }
 
     &__ul {
         padding-left: 0px;
-        
 
 
 
+        /*au survol changement couleur icone*/
         & :hover i {
             color: $couleur-primaire;
         }
@@ -133,6 +140,7 @@ header {
 
     }
 
+    /* taille et placement, couleur des li*/
     &__li {
         list-style: none;
         font-size: 15px;
@@ -152,7 +160,7 @@ header {
         }
 
 
-
+        /*taille et placement et couleur du chiffre avec son rond autour*/
 
         &--chiffre {
             border: 1px solid $couleur-primaire;
@@ -165,6 +173,7 @@ header {
 
         }
 
+        /* placement et couleur de l'icone*/
         & i {
             color: $couleur-gris2;
             margin-left: 20px;
@@ -174,8 +183,10 @@ header {
     }
 }
 
-/*cartes restaurant*/
+/*section restaurant*/
 
+
+/*couleur taille marge de la partie restaurant*/
 .restaurant {
 
     background-color: $couleur-gris3;
@@ -190,6 +201,8 @@ header {
 
     }
 
+    /*taille et placement des carte + ombre + indication animation scale au survol*/
+
     &__carte {
         width: 90%;
         height: 220px;
@@ -203,6 +216,7 @@ header {
         transform: scale(1);
         transition-duration: 400ms;
 
+        /*taille de l'image dans les cartes restaurant*/
 
         &--tailleimage {
             width: 100%;
@@ -233,9 +247,12 @@ header {
             padding: 10px;
         }
 
+        /*animation grossisement de la carte au survol*/
         &:hover {
             transform: scale(1.01);
         }
+
+        /*taille, placement et couleur pour le cadre nouveau sur les cartes restaurant*/
 
         &--nouveau {
             color: $couleur-vert-fonce;
@@ -260,19 +277,20 @@ header {
 
 }
 
+/*coeur taille placement + indication animation*/
 .coeur {
     display: flex;
     transform: scale(1);
     transition-duration: 1000ms;
 
-
+    /*coeur qui grossit au survol*/
     &:hover {
         transform: scale(1.35);
 
     }
 
 
-
+    /*coeur plein taille position + indication animation + hauteur du z-index + opacité à 0 avant l'animation*/
     &__plein {
         position: relative;
         width: 20px;
@@ -286,21 +304,17 @@ header {
         transition: opacity 250ms;
         z-index: 2;
 
-
+        /*au survol opcité à 1 pour faire apparaitre le coeur plein*/
         &:hover {
 
             opacity: 1;
 
         }
 
-        &:active {
-            opacity: 1;
-        }
-
-
-
     }
 
+
+    /* opacité à 0 et z-index descendu au survol pour faire disparaitre les contours du coeur vide*/
     &__vide {
         width: 0px;
         font-size: 20px;
@@ -321,6 +335,7 @@ header {
 
 /*footer*/
 
+/*taille, couleur, position du footer*/
 .footer {
     color: white;
     background-color: $couleur-gris1;
@@ -332,6 +347,8 @@ header {
         font-size: 20px;
         padding-left: 35px;
     }
+
+    /*enlever style de la liste*/
 
     &__ul {
         list-style: none;
@@ -358,6 +375,8 @@ header {
 
 /*loading spinner*/
 
+/*couleur de fond + taille + indiaction pour l'animation - intégration de la keyframes*/
+
 #loader {
     position: fixed;
     width: 100%;
@@ -371,6 +390,8 @@ header {
     animation-delay: 3000ms;
 
 }
+
+/*keyframes opacité + remonté vers le haut et à la fin z-index -1 pour disparaitre*/
 
 @keyframes loader {
     0% {
@@ -643,11 +664,11 @@ header {
         }
     }
 
-    
+
 
     &:hover .menu-carte__description--prix {
 
-        
+
 
         animation: animation-prix 600ms both;
     }
@@ -663,7 +684,7 @@ header {
     100% {
         width: 100px;
     }
-    
+
 }
 
 
