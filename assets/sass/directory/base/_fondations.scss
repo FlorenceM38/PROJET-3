@@ -375,7 +375,7 @@ header {
 
 /*loading spinner*/
 
-/*couleur de fond + taille + indiaction pour l'animation - intégration de la keyframes*/
+/*couleur de fond + taille + indication pour l'animation - intégration de la keyframes*/
 
 #loader {
     position: fixed;
@@ -391,7 +391,7 @@ header {
 
 }
 
-/*keyframes opacité + remonté vers le haut et à la fin z-index -1 pour disparaitre*/
+/*keyframes opacité + remonté vers le haut et à la fin z-index -1 pour disparaitre (pour le loading spinner)*/
 
 @keyframes loader {
     0% {
@@ -420,6 +420,8 @@ header {
     }
 }
 
+/*fourchette indication pour animation keyframe + couleur placement taille des couverts (pour le loading spinner)*/
+
 .fourchette {
     background: -webkit-linear-gradient(bottom, $couleur-secondaire , $couleur-primaire );
     background-clip: text;
@@ -435,6 +437,7 @@ header {
     scale: 1;
 }
 
+/*keyframes des couverts qui tournent et qui changent de taille (pour le loading spinner)*/
 @keyframes fourchette {
     25% {
         transform: rotate(360deg);
@@ -458,6 +461,7 @@ header {
     }
 }
 
+/*loading spinner */
 #loader p {
     font-family: 'shrikhand';
     background: -webkit-linear-gradient(bottom, $couleur-secondaire , $couleur-primaire );
@@ -471,8 +475,9 @@ header {
 
 }
 
-/*page "la note enchantée*/
+/*pages menu*/
 
+/*placement des elements du header*/
 .nav-accueil-enchanté {
     display: flex;
     align-items: center;
@@ -485,10 +490,11 @@ header {
     }
 }
 
+/*position et hauteur de l'image pour qu'elle passe en dessous de l'élément du dessous*/
 .image-fond {
 
-    width: 100%;
-    z-index: 1;
+    /*width: 100%;
+    z-index: 1;*/
 
     &__haut {
         width: 100%;
@@ -501,7 +507,9 @@ header {
 
 }
 
+/*section menu*/ 
 
+/*couleur de fond reglage des marges, padding et border*/ 
 .menu {
 
     background-color: $couleur-gris3;
@@ -509,7 +517,7 @@ header {
     margin-top: -40px;
     padding: 20px 20px 40px 20px;
 
-
+/* placement du titre et choix de la police + placement du coeur par rapport au titre*/
     &__titre {
         font-family: 'shrikhand';
         font-size: 18px;
@@ -524,6 +532,8 @@ header {
         }
     }
 
+/* placement des sous titres+ taille couleur et soulignement du titre en vert avec police en majuscule */
+
     &__sous-titre {
         font-size: 18px;
         font-family: 'Roboto-Thin';
@@ -537,6 +547,7 @@ header {
     }
 }
 
+/*format et condition des cartes, texte qui ne depasse pas, couleur, etc..*/
 .menu-carte {
 
     width: 100%;
@@ -551,7 +562,7 @@ header {
 
 
 
-
+/*police du texte + pas de passage à la ligne + texte qui ne dépasse pas du cadre + ... quand le texte dépasse */
     &__details {
 
         font-family: 'roboto-medium';
@@ -560,8 +571,8 @@ header {
         height: 100%;
         width: 100%;
         /* transform: scaleX(1);
-        transform-origin: left;*/
-        transition: width 600ms ease-out;
+        transform-origin: left;
+        transition: width 600ms ease-out;*/
 
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -596,6 +607,8 @@ header {
     }
 }
 
+/*placement du prix*/ 
+
 .menu-carte__description--prix {
     margin: 10px;
 
@@ -611,11 +624,12 @@ header {
     }
 }
 
+/*coche*/
 
 .div-coche {
     display: flex;
 
-
+/*placement de la coche + indication pour l'animation de la coche qui part à gauche en partant de la droite + couleur*/
 
     &__check {
         font-size: 20px;
@@ -631,14 +645,12 @@ header {
         position: absolute;
         top: 0;
         right: 0;
-
         transform: translateX(100px);
-
-
-
         transition: transform 600ms ease-out;
-
         transform-origin: right;
+
+
+/*couleur et placement du petit V de la coche + indication de l'animation pour qu'il tourne*/
 
         & i {
             border: 4px solid white;
@@ -651,11 +663,13 @@ header {
 
 .carte {
 
-
+/*au survol la coche se decalle progressivement pour etre visible*/
 
     &:hover .div-coche__check {
 
         transform: translate(0px);
+
+        /*au survole le V tourne progressivement*/
 
         & i {
 
@@ -665,7 +679,7 @@ header {
     }
 
 
-
+/*indication de l'animation de la keyframe pour que le prix se decale et reste décalé tant que la souris survole */
     &:hover .menu-carte__description--prix {
 
 
@@ -675,6 +689,8 @@ header {
 
 
 }
+
+/*keyframe pour que le prix suive le mouvement de la coche tout en réduisant l'espace du detail de la carte pour faire apparaitre les ...*/
 
 @keyframes animation-prix {
     0% {
@@ -687,6 +703,7 @@ header {
 
 }
 
+/*keyframe pour que les cartes apparaissent progressivement au chargement de la page*/ 
 
 @keyframes animation-carte {
 
@@ -711,6 +728,7 @@ header {
     }
 }
 
+/*animation keyframe pour que les cartes apparaissent progressivement au chargement de la page avec décalage du début de l'animation carte par carte */
 
 .menu-carte--1 {
     opacity: 0;
@@ -736,7 +754,7 @@ header {
 }
 
 
-/*bouton commander*/
+/*bouton commander placement et marge*/
 
 .bouton-commander {
 
@@ -744,6 +762,7 @@ header {
     justify-content: center;
     margin-top: 40px;
 
+/*mixin pour le style des boutons*/
 
     &__violet {
         @include bouton-violet($font-size: 17px);
@@ -752,7 +771,7 @@ header {
         transition-property: transform;
     }
 
-
+/*mixin pour le style des boutons au survol, un peu plus clair et très légèrement plus gros*/ 
     & :hover {
         @include ombre-bouton-survol;
         background: linear-gradient(to bottom right, $couleur-secondaire-claire, $couleur-primaire-claire);
@@ -763,7 +782,11 @@ header {
 
 }
 
+/* media queries*/
+
 @media screen and (min-width: 1098px) {
+
+    /*changement de direction pour la version pc*/
 
     .menu_pc {
         flex-direction: row;
