@@ -105,11 +105,6 @@ header {
 
 /* section fonctionnement*/
 .fonctionnement {
-  /*& a:hover {
-      background-color: lighten($color: $couleur-primaire, $amount: 36);
-      color: $couleur-primaire;
-
-  } */
   /* au survol des li changement de la couleur de fond*/
   /* taille et placement, couleur des li*/
 }
@@ -354,23 +349,26 @@ header {
   position: relative;
   margin-top: 200PX;
   animation: fourchette 3000ms;
-  scale: 1;
 }
 
 /*keyframes des couverts qui tournent et qui changent de taille (pour le loading spinner)*/
 @keyframes fourchette {
   25% {
     transform: rotate(360deg);
-    scale: 2;
+    /*scale: 2;*/
+    font-size: 140px;
   }
   50% {
-    scale: 2.5;
+    /*scale: 2.5;*/
+    font-size: 175px;
   }
   75% {
-    scale: 2;
+    /*scale: 2;*/
+    font-size: 140px;
   }
   100% {
-    scale: 1.75;
+    /*scale: 1.75;*/
+    font-size: 120px;
   }
 }
 /*loading spinner */
@@ -623,7 +621,7 @@ header {
 }
 
 /* media queries*/
-@media screen and (min-width: 1098px) {
+@media screen and (min-width: 992px) {
   /*changement de direction pour la version pc*/
   .menu_pc {
     flex-direction: row;

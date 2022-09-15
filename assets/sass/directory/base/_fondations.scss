@@ -112,31 +112,19 @@ header {
         padding-left: 20px;
     }
 
-    /*& a:hover {
-        background-color: lighten($color: $couleur-primaire, $amount: 36);
-        color: $couleur-primaire;
-
-    } */
-
-
     /* au survol des li changement de la couleur de fond*/
     & li:hover {
         background-color: lighten($color: $couleur-primaire, $amount: 36);
         /*color: $couleur-primaire;*/
-
-
     }
 
     &__ul {
         padding-left: 0px;
 
-
-
         /*au survol changement couleur icone*/
         & :hover i {
             color: $couleur-primaire;
         }
-
 
     }
 
@@ -326,10 +314,6 @@ header {
             opacity: 0;
         }
     }
-
-
-
-
 }
 
 
@@ -434,29 +418,33 @@ header {
     position: relative;
     margin-top: 200PX;
     animation: fourchette 3000ms;
-    scale: 1;
+    
 }
 
 /*keyframes des couverts qui tournent et qui changent de taille (pour le loading spinner)*/
 @keyframes fourchette {
     25% {
         transform: rotate(360deg);
-        scale: 2;
+        /*scale: 2;*/
+        font-size: 140px;
 
     }
 
     50% {
 
-        scale: 2.5;
+        /*scale: 2.5;*/
+        font-size: 175px;
     }
 
     75% {
-        scale: 2;
+        /*scale: 2;*/
+        font-size: 140px;
 
     }
 
     100% {
-        scale: 1.75;
+        /*scale: 1.75;*/
+        font-size: 120px;
 
     }
 }
@@ -507,9 +495,9 @@ header {
 
 }
 
-/*section menu*/ 
+/*section menu*/
 
-/*couleur de fond reglage des marges, padding et border*/ 
+/*couleur de fond reglage des marges, padding et border*/
 .menu {
 
     background-color: $couleur-gris3;
@@ -517,7 +505,7 @@ header {
     margin-top: -40px;
     padding: 20px 20px 40px 20px;
 
-/* placement du titre et choix de la police + placement du coeur par rapport au titre*/
+    /* placement du titre et choix de la police + placement du coeur par rapport au titre*/
     &__titre {
         font-family: 'shrikhand';
         font-size: 18px;
@@ -532,7 +520,7 @@ header {
         }
     }
 
-/* placement des sous titres+ taille couleur et soulignement du titre en vert avec police en majuscule */
+    /* placement des sous titres+ taille couleur et soulignement du titre en vert avec police en majuscule */
 
     &__sous-titre {
         font-size: 18px;
@@ -562,7 +550,7 @@ header {
 
 
 
-/*police du texte + pas de passage à la ligne + texte qui ne dépasse pas du cadre + ... quand le texte dépasse */
+    /*police du texte + pas de passage à la ligne + texte qui ne dépasse pas du cadre + ... quand le texte dépasse */
     &__details {
 
         font-family: 'roboto-medium';
@@ -607,7 +595,7 @@ header {
     }
 }
 
-/*placement du prix*/ 
+/*placement du prix*/
 
 .menu-carte__description--prix {
     margin: 10px;
@@ -629,7 +617,7 @@ header {
 .div-coche {
     display: flex;
 
-/*placement de la coche + indication pour l'animation de la coche qui part à gauche en partant de la droite + couleur*/
+    /*placement de la coche + indication pour l'animation de la coche qui part à gauche en partant de la droite + couleur*/
 
     &__check {
         font-size: 20px;
@@ -650,7 +638,7 @@ header {
         transform-origin: right;
 
 
-/*couleur et placement du petit V de la coche + indication de l'animation pour qu'il tourne*/
+        /*couleur et placement du petit V de la coche + indication de l'animation pour qu'il tourne*/
 
         & i {
             border: 4px solid white;
@@ -663,7 +651,7 @@ header {
 
 .carte {
 
-/*au survol la coche se decalle progressivement pour etre visible*/
+    /*au survol la coche se decalle progressivement pour etre visible*/
 
     &:hover .div-coche__check {
 
@@ -679,7 +667,7 @@ header {
     }
 
 
-/*indication de l'animation de la keyframe pour que le prix se decale et reste décalé tant que la souris survole */
+    /*indication de l'animation de la keyframe pour que le prix se decale et reste décalé tant que la souris survole */
     &:hover .menu-carte__description--prix {
 
 
@@ -703,7 +691,7 @@ header {
 
 }
 
-/*keyframe pour que les cartes apparaissent progressivement au chargement de la page*/ 
+/*keyframe pour que les cartes apparaissent progressivement au chargement de la page*/
 
 @keyframes animation-carte {
 
@@ -762,7 +750,7 @@ header {
     justify-content: center;
     margin-top: 40px;
 
-/*mixin pour le style des boutons*/
+    /*mixin pour le style des boutons*/
 
     &__violet {
         @include bouton-violet($font-size: 17px);
@@ -771,7 +759,7 @@ header {
         transition-property: transform;
     }
 
-/*mixin pour le style des boutons au survol, un peu plus clair et très légèrement plus gros*/ 
+    /*mixin pour le style des boutons au survol, un peu plus clair et très légèrement plus gros*/
     & :hover {
         @include ombre-bouton-survol;
         background: linear-gradient(to bottom right, $couleur-secondaire-claire, $couleur-primaire-claire);
@@ -784,7 +772,7 @@ header {
 
 /* media queries*/
 
-@media screen and (min-width: 1098px) {
+@media screen and (min-width: 992px) {
 
     /*changement de direction pour la version pc*/
 
